@@ -9,22 +9,40 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play index.</tw-noscript></noscript></tw-story>
-<tw-storydata name="index" startnode="7" creator="Twine" creator-version="2.3.12" ifid="86B25A53-3CAD-4F63-976F-9E5CD786A2F2" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#story {
-margin-left:5.5em;
+<tw-storydata name="index" startnode="7" creator="Twine" creator-version="2.3.12" ifid="86B25A53-3CAD-4F63-976F-9E5CD786A2F2" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">head {
+  box-shadow: inset 0px 0px 30em #bbb;
+  width:100%;
+  display:block;
+  position:fixed;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+head * {
+  display:none;
+}
 body {
-background-color: white;
-color: darkgrey;
-font-family: Futura,Impact,Helvetica,sans-serif;
-font-size: 125%;
+  background-color:#fff;
+  margin: 0;
+  text-align:center;
+}
+#passages {
+  border-left: 0;
+  margin: 0;
+  padding: 0;
+  line-height:100vh;
+}
+.passage {
+  position:absolute;
+  top: 0;  bottom: 0;  left: 0;  right: 0;
+  width: 75%;
+  height: 75%;
+  margin:auto;
+  font: bold 6em/1.25em Helvetica, "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  letter-spacing: -0.05em;
+  text-align:center;
 }
 
-.explore{
-  background-color: deeppink;
-}
+
+
 
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.2.1
@@ -71,12 +89,12 @@ font-size: 125%;
 &quot;How do I get there? Let&#39;s google it&quot;
 )
 
-</tw-passagedata><tw-passagedata pid="2" name="placement" tags="" position="208,300" size="100,100">I have a placement!
+</tw-passagedata><tw-passagedata pid="2" name="placement" tags="" position="200,300" size="100,100">I have a placement!
 I wonder what it will be like?
 I need to arrive at 9am, I hope I am on time!
 I don&#39;t have any idea of what I will have to do...
-I hope it isn&#39;t boring... Downhill from Day 1?</tw-passagedata><tw-passagedata pid="3" name="going" tags="" position="225,713" size="100,100">It&#39;s going to be hard getting up that early...
-It&#39;s going to be a long day... </tw-passagedata><tw-passagedata pid="4" name="what" tags="" position="383,709" size="100,100">Will I make any friends?
+I hope it isn&#39;t boring... Downhill from Day 1?</tw-passagedata><tw-passagedata pid="3" name="going" tags="" position="225,725" size="100,100">It&#39;s going to be hard getting up that early...
+It&#39;s going to be a long day... </tw-passagedata><tw-passagedata pid="4" name="what" tags="" position="375,700" size="100,100">Will I make any friends?
 What I will wear, are my nice jumpers clean?
 Will I have my own desk?
 Who of all of these names will be my boss?
@@ -91,7 +109,7 @@ How do I get there? Let&#39;s google it</tw-passagedata><tw-passagedata pid="5" 
 &gt;XXX. Your line manager called Helen XX will be expecting you at 9:00am at &gt;the Tower B, Floor 6, Of 605. Southgate, Bath.
 &gt;
 &gt;Thanks,
-&gt;HR</tw-passagedata><tw-passagedata pid="6" name="1 New Email" tags="inbox" position="525,200" size="200,100">📥 Inbox(99999998 new messages)
+&gt;HR</tw-passagedata><tw-passagedata pid="6" name="1 New Email" tags="email" position="525,200" size="200,100">📥 Inbox(99999998 new messages)
 
 
 =|=
@@ -124,8 +142,7 @@ Date:
 -----------------------------------------
 20 March
 -----------------------------------------
-|==|
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="splash" tags="" position="850,200" size="100,100"># Prototype
+|==|</tw-passagedata><tw-passagedata pid="7" name="splash" tags="" position="850,200" size="100,100"># Prototype
 
 ## Demo 1
 
@@ -133,6 +150,7 @@ Date:
 mixoffice: ./audio/IBSUMixOffice.mp3, ./audio/IBSUMixOffice.ogg
 dombackground: ./audio/IBSUDomesticbackground.mp3, ./audio/IBSUDomesticbackground.ogg</tw-passagedata><tw-passagedata pid="9" name="Welcome" tags="" position="850,350" size="100,100">This is a immersive audio and text experience.
 
+&#96;Works best with headphones&#96;
 &#96;There is no rush.&#96;
 &#96;Take your time&#96;
 &#96;Imagine the spaces.&#96;
