@@ -88,6 +88,10 @@ a.internalLink:nth-child(3n+2), a.externalLink:nth-child(3n+2) {
   } 
 }
 
+.thoughts{
+  font-size: 2.0em;
+}
+
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.2.1
  * for Harlowe 2.1.0 and higher
@@ -157,7 +161,7 @@ dombackground: ./audio/IBSUDomesticbackground.mp3, ./audio/IBSUDomesticbackgroun
 &#96;Imagine the spaces.&#96;
 
 #[[Begin-&gt;1 New Email]]</tw-passagedata><tw-passagedata pid="6" name="the placement" tags="" position="325,350" size="100,100">(track: &#39;mixoffice&#39;, &#39;play&#39;)
-
+&lt;div class=&quot;thoughts&quot;&gt;
 #(seq-link: bind $ivar,
 &quot;I ...&quot;,
 &quot;I have a placement!&quot;,
@@ -168,14 +172,18 @@ dombackground: ./audio/IBSUDomesticbackground.mp3, ./audio/IBSUDomesticbackgroun
 &quot;I need to arrive at 9am, I hope I am on time!&quot;, 
 &quot;I don&#39;t have any idea of what I will have to do...&quot;, 
 &quot;I hope it isn&#39;t boring... Downhill from Day 1?&quot;,
-&quot;(link-goto: &#39;...&#39;, &#39;Its&#39;)&quot;)</tw-passagedata><tw-passagedata pid="7" name="Its" tags="" position="400,500" size="100,100">(track: &#39;dombackground&#39;, &#39;play&#39;)
+&quot;(link-goto: &#39;...&#39;, &#39;Its&#39;)&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Its" tags="" position="400,500" size="100,100">(track: &#39;dombackground&#39;, &#39;play&#39;)
+&lt;div class=&quot;thoughts&quot;&gt;
 #(seq-link: bind $itsvar, 
 &quot;It&#39;s ...&quot;,
 &quot;It&#39;s going to be hard getting up that early...&quot;,
 &quot;It&#39;s going to be a long day...&quot;,
 &quot;(link-goto: &#39;...&#39;, &#39;Ws&#39;)&quot;
-)</tw-passagedata><tw-passagedata pid="8" name="Ws" tags="" position="400,650" size="100,100">#(seq-link: bind $wvar,
-&quot;Will/What/Who/How...&quot;,
+)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Ws" tags="" position="400,650" size="100,100">&lt;div class=&quot;thoughts&quot;&gt;
+#(seq-link: bind $wvar,
+&quot;What/Who/How...&quot;,
 &quot;Will I make any friends?&quot;,
 &quot;What I will wear, are my nice jumpers clean?&quot;,
 &quot;Will I have my own desk?&quot;,
@@ -185,7 +193,10 @@ dombackground: ./audio/IBSUDomesticbackground.mp3, ./audio/IBSUDomesticbackgroun
 &quot;What do I do if I want to get a coffee?&quot;,
 &quot;How do I get there? Let&#39;s google it&quot;,
 &quot;(link-goto: &#39;...&#39;, &#39;finish&#39;)&quot;
-)</tw-passagedata><tw-passagedata pid="9" name="finish" tags="" position="175,675" size="100,100">#Good luck</tw-passagedata><tw-passagedata pid="10" name="fini" tags="" position="800,850" size="100,100"></tw-passagedata></tw-storydata>
+)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="finish" tags="" position="175,675" size="100,100">&lt;div class=&quot;thoughts&quot;&gt;
+#Good luck
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="fini" tags="" position="800,850" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
