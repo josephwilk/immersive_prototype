@@ -16,23 +16,28 @@ head {
   width:100%;
   display:block;
   position:fixed;
+  background-color:#ffffff;
 }
 head * {
   display:none;
 }
 body {
-	font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   background-color:#ffffff;
   margin: 0;
   text-align:center;
 }
+tw-story{
+   background-color:#ffffff;
+}
+
 #passages {
   border-left: 0;
   margin: 0;
   padding: 0;
   line-height:100vh;
 }
-.passage {
+tw-passage {
   position:absolute;
   top: 0;  bottom: 0;  left: 0;  right: 0;
   width: 75%;
@@ -40,7 +45,8 @@ body {
   margin:auto;
   font-weight: 300;
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #000;
+  background-color:#ffffff;
+  color: #111;
   letter-spacing: -0.05em;
   text-align:center;
 }
@@ -67,6 +73,7 @@ body {
 #storymenu, #snapback, #restart, #share, #credits {
   display:none;
 }
+
 a.internalLink:hover, a.externalLink:hover {
   color:#de0000 !important;
   text-decoration: none;
@@ -95,18 +102,34 @@ a.internalLink:nth-child(3n+2), a.externalLink:nth-child(3n+2) {
 h1{
 font-family: 'Montserrat Alternates', sans-serif;
 font-weight: 800;
+  text-shadow: 2px 2px #a20c5d;
 }
 
 h2,h3{
 font-family: 'Montserrat Alternates', sans-serif;
 font-weight: 500;
+   text-shadow: 2px 2px #a20c5d;
 }
 
 .thoughts{
 font-family: 'Montserrat Alternates', sans-serif;
 font-weight: 800;
   font-size: 1.5em;
+  text-shadow: 2px 2px #a20c5d;
 }
+
+tw-link
+{
+  color: #ff1493;
+}
+
+tw-link:hover
+{
+  color: #ffa9d7;
+  
+}
+
+
 
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.2.1
